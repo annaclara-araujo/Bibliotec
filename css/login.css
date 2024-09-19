@@ -1,73 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* HEADER  */
-.layout-grid {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 992px;
-    /* border: 3px solid white; */
-}
-
-
-html {
-    width: 100%;
+html body {
     height: 100%;
 }
 
 body {
-    background-color: aliceblue;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", system-ui;
     display: flex;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    background-image: url("login-bk-desktop.png");
+    background-repeat: no-repeat;
 }
 
 header {
-    background-color: #202529;
+    background-color: #26333d;
     height: 100px;
     width: 100%;
-    color: white;
-
-    display: flex;
-    justify-content: center;
 }
 
+.Layout-grid {
+    margin: 0 auto;
+    width: 100%;
+    /* border: 3px solid snow; */
+    max-width: 992px;
+}
 
 .header-flex {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 100%;
-}
-
-.section-flex {
-    width: 100%;
-    background-color: aliceblue;
 }
 
 header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 350px;
     height: 100%;
-    /* border: 3px solid white; */
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* border: 3px solid snow; */
 }
 
-header nav a {
+nav a {
+    text-decoration: none;
     color: white;
-    /* font-family: ; */
+}
+
+nav a:hover {
+    color: #2FD6CB;
+}
+/*** fim cabeçalho ***/
+
+.login-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login {
+    background-color: #fbfbfb49;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 750px;
+    max-width: 90%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     margin-top: 70px;
+    border-radius: 15px; 
+    gap: 30px;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #007bff;
+    text-align: right;
     text-decoration: none;
 }
 
-/* HEADER FIM */
-
-
-
-/* MAIN */
+.forgot-password:hover {
+    text-decoration: underline;
+}
